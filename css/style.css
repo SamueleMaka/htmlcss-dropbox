@@ -24,6 +24,7 @@ html {
 }
 hr{
     color: grey;
+    margin-top: 200px;
 }
 
 .small-container{
@@ -31,6 +32,7 @@ hr{
     margin: 0 auto;
     margin-top: 100px;
     height: 200px;
+    margin-top: 50px;
 }
 .long-text{
     line-height: 1.5rem;
@@ -43,7 +45,7 @@ hr{
     z-index: 999;
     padding: 25px;
     align-items: center;
-    gap: aut;
+    background-color: white;
 }
 .header-left{
     justify-self: left;
@@ -72,6 +74,7 @@ hr{
 .jumbo{
     display: flex;
     margin-top: 30px;
+    position: relative;
 }
 .jumbo-small{
     width: 30%;
@@ -92,28 +95,52 @@ hr{
     margin: 15px 0;
 }
 .jumbo-large > img{
-    position: relative;
-    width: 100%;
+    position: absolute;
+    width:70%;
 }
 .radio-buttons{
     margin: 30px 0;
-    height: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .radio{
     width: 1rem;
     height: 1rem;
-    border: 3px solid #0061fe;
-    display: inline-block;
     border-radius: 50%;
 }
 .checked{
-    border: 3px solid #0061fe;
+    border: 4px solid #0061fe;
 }
 .unchecked{
     border: 2px solid grey;
 }
 .radio-text{
-    display: inline-block ;
-    margin-right: 50px;
-    line-height: 1rem;
+    margin-right: 30px;
+}
+.pricing-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.plan-card{
+    width: 30%;
+    min-height: 600px;
+    border: 1px solid grey;
+    
+}
+.large-plan-card{
+    width: 100%;
+    min-height: 600px;
+    margin-top: 50px;
+    border: 1px solid grey;
+}
+.plan-target > *{
+    display: inline-block;
+}
+.plan-target{
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid grey;
 }
