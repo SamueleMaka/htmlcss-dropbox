@@ -1,81 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="header">
-        <img src="img/logo-small.png" alt="" class="logo">
-        <div class="header-left">
-            <a>Perché DropBox</a>
-            <a>Funzioni</a>
-            <a>Piani e Prezzi</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DropBox</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="img/logo-small.png" alt="" class="logo">
+            <div class="header-left">
+                <a>Perché DropBox</a>
+                <a>Funzioni</a>
+                <a>Piani e Prezzi</a>
+            </div>
+            <div class="header-right">
+                <a>Supporto</a>
+                <a>Contatta l'ufficio vendite</a>
+                <a class="transparent button">Accedi</a>
+                <a class="blue button">Inizia</a>
+            </div>
         </div>
-        <div class="header-right">
-            <a>Supporto</a>
-            <a>Contatta L'ufficio Vendite</a>
-            <a class="access">Accedi</a>
-            <a class="access blue-button">Inizia</a>
-        </div>
-    </div>
-
-
-    <div class="main">
-        <div class="jumbo-container">
+        <div class="jumbo">
             <div class="large-container">
-                <h1 class="big-title">Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
-                <div class="jumbo">
-                    <div class="jumbo-small">
-                        <div class="long-text">Dinalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. DropBox Buisness è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</div>
-                        <div class="jumbo-buttons">
-                            <a class="blue-button">Inizia la tua prova gratuita</a>
-                        <a class="transparent-button">Annulla in qualsiasi momento</a>
+                <h1 class="big-title">
+                    Tutto ciò che ti serve per il lavoro, in un unico posto
+                </h1>
+                <div class="jumbo-content">
+                    <div class="jumbo-small-section">
+                        <div class="long-text">
+                            Dinalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. DropBox Buisness è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
                         </div>
-                        <a class="arrow-down"><i class="fa-solid fa-arrow-down"></i></a>
+                        <div class="jumbo-actions">
+                            <div class="blue button">
+                                Inizia la tua prova gratuita
+                            </div>
+                            <div>
+                                Annulla in qualsiasi momento
+                            </div>
+                        </div>
+                        <div class="jumbo-go-down">
+                            <a class="go-down"><i class="fa-solid fa-arrow-down"></i></a>
+                        </div>
                     </div>
-                    <div class="jumbo-large">
-                        <img src="img/jumbo.png" alt="">
+                    <div class="jumbo-large-section">
+                        <img src="img/jumbo.png" alt="" class="jumbo-img">
                     </div>
                 </div>
             </div>
         </div>
-<hr>
-        <div class="small-container">   
-            <div class="medium-title">Trova il piano Buisness che fa per te</div>
-            <div class="radio-buttons">
-                <div class="radio checked"></div>
-                <div class="radio-text">Fatturazione mensile</div>
-                <div class="radio unchecked"></div>
-                <div class="radio-text">Fatturazione Annuale</div>
-            </div>
-            <div class="pricing-cards">
-                <div class="plan-card">
-                    <div class="plan-target">
-                        <i class="fa-solid fa-user"></i>
-                        <p>Singolo</p> 
+        <hr>
+        <div class="small-container">
+            <div class="section one">
+                <div class="medium-title">
+                    Trova il piano Buisness che fa per te
+                </div>
+                <div class="payment-options">
+                    <div class="radio checked"></div>
+                    <div class="radio-text">
+                        Fatturazione Mensile
                     </div>
-                    <div class="plan-content">
-
-                    </div>
-                    <div class="plan-highlight">
-
+                    <div class="radio unchecked"></div>
+                    <div class="radio-text">
+                        Fatturazione Annuale
                     </div>
                 </div>
-                <div class="plan-card"></div>
-                <div class="plan-card"></div>
-                <div class="large-plan-card"></div>
+                <div class="plan-cards">
+                    <div class="plan-card">
+                        <div class="plan-card-type">
+                            <i class="fa-solid fa-user"></i>
+                            Singolo 
+                        </div>
+                        <div class="plan-card-content">
+                            <div class="plan-card-name">
+                                <div class="small-title">
+                                    Professional
+                                </div>
+                                <div class="bold-text">€ 12.00</div>
+                                <div class="grey-text">/mese</div>
+                            </div>
+                            <div class="plan-card-info">
+                                <div class="list-item">
+                                    <i class="fa-solid fa-user"></i>
+                                    <div class="long-text">1 Utente</div>
+                                </div>
+                                <div class="list-item">
+                                    <i class="fa-solid fa-folder"></i>
+                                    <div class="long-text">5TB di spazio di archiviazione sicuro</div>
+                                </div>
+                                <div class="list-item">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <div class="long-text">Funzioni di produttività premium e condivisione file semplice e sicura</div>
+                                </div>
+                            </div>
+                            <div class="plan-card-buy">
+                                <div class="blue button">Prova gratis per 30 giorni</div>
+                                <div class="buy-now">oppure <u>acquista ora</u></div>
+                            </div>
+                            <hr class="card-divider">
+                            <div class="plan-card-highlight">
+                                <div class="bold-text">Punti salienti del piano</div>
+                                <div class="list-item">
+                                    <i class="check">&check;</i>
+                                    <div class="long-text">Invia file fino a 100GB con DropBox Transfert</div>
+                                </div>
+                                <div class="list-item">
+                                    <i class="check">&check;</i>
+                                    <div class="long-text">Cartelle offline su dispositivi mobili</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-card">
+                        <div class="plan-card-type">
+                            <i class="fa-solid fa-user-group"></i>
+                            Team 
+                        </div>
+                        <div class="plan-card-content">
+                            <div class="plan-card-name">
+                                <div class="small-title">
+                                    Advanced
+                                </div>
+                                <div class="bold-text">€ 18.00</div>
+                                <div class="grey-text">/utente/mese</div>
+                            </div>
+                            <div class="plan-card-info">
+                                <div class="list-item">
+                                    <i class="fa-solid fa-user"></i>
+                                    <div class="long-text">3 o più utenti</div>
+                                </div>
+                                <div class="list-item">
+                                    <i class="fa-solid fa-folder"></i>
+                                    <div class="long-text">Tutto lo spazio di cui il tuo team ha bisogno</div>
+                                </div>
+                                <div class="list-item">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <div class="long-text">Sofisticate funzioni di controllo per tenere al sicuro tutti i file del tuo team</div>
+                                </div>
+                            </div>
+                            <div class="plan-card-buy">
+                                <div class="blue button">Prova gratis per 30 giorni</div>
+                                <div class="buy-now">oppure <u>acquista ora</u></div>
+                            </div>
+                            <hr class="card-divider">
+                            <div class="plan-card-highlight">
+                                <div class="bold-text">Punti salienti del piano</div>
+                                <div class="list-item">
+                                    <i class="check">&check;</i>
+                                    <div class="long-text">Invia file fino a 100GB con DropBox Transfert</div>
+                                </div>
+                                <div class="list-item">
+                                    <i class="check">&check;</i>
+                                    <div class="long-text">Cartelle offline su dispositivi mobili</div>
+                                </div>
+                                <div class="list-item">
+                                    <i class="check">&check;</i>
+                                    <div class="long-text">Risparmio del 50% rispetto alle iscrizioni singole</div>
+                                </div>
+                                <div class="list-item">
+                                    <i class="check">&check;</i>
+                                    <div class="long-text">Possibilità di inserire nuovi membri nel team</div>
+                                </div>
+                                <div class="list-item">
+                                    <i class="check">&check;</i>
+                                    <div class="long-text">Gestione dei permessi in base ai ruoli</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-card">
+                        <div class="plan-card-type">
+                            <i class="fa-solid fa-building"></i>
+                            Azienda   
+                        </div>
+                        <div class="plan-card-content">
+                            <div class="plan-card-name">
+                                <div class="small-title">
+                                    Enterprise
+                                </div>
+                                <div class="bold-text">Contattaci</div>
+                                <div class="grey-text">-</div>
+                            </div>
+                            <div class="plan-card-info">
+                                <div class="list-item">
+                                    <i class="fa-solid fa-user"></i>
+                                    <div class="long-text">10 o più Utenti</div>
+                                </div>
+                                <div class="list-item">
+                                    <i class="fa-solid fa-folder"></i>
+                                    <div class="long-text">Soluzioni personalizzabili per la tua azienda</div>
+                                </div>
+                                <div class="list-item">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <div class="long-text">Assistenza per aiutare gli amministratori in una gestione su larga scala</div>
+                                </div>
+                            </div>
+                            <div class="plan-card-buy">
+                                <div class="blue button">Prova gratis per 30 giorni</div>
+                                <div class="buy-now">oppure <u>acquista ora</u></div>
+                            </div>
+                            <hr class="card-divider">
+                            <div class="plan-card-highlight">
+                                <div class="bold-text">Punti salienti del piano</div>
+                                <div class="list-item">
+                                    <i class="check">&check;</i>
+                                    <div class="long-text">Invia file fino a 100GB con DropBox Transfert</div>
+                                </div>
+                                <div class="list-item">
+                                    <i class="check">&check;</i>
+                                    <div class="long-text">Cartelle offline su dispositivi mobili</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="large-plan-card">
+                        <div class="plan-card-type">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div class="large-plan-card-content">
+                            <div class="large-plan-card-name">
+                                <div class="small-title">
+                                    Enterprise
+                                </div>
+                                <div class="bold-text">Contatta l'ufficio vendite per i prezzi</div>
+                                <div class="long-text">Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala</div>
+                            </div>
+                            <div class="large-plan-card-buy blue button">
+                                Contatta l'ufficio vendite
+                            </div>
+                        </div>
+                        <div class="large-plan-card-info">
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+            <div class="section two">
+                <div class="large-partner">
+                    <img src="img/partner.png" alt="" class="partner">
+                </div>
+                <div class="small-partner">
+                    <div class="small-title">
+                        Entra in contatto con un partner DropBox
+                    </div>
+                    <div class="long-text">
+                        Trova un partner DropBox e HelloSign di fiducia, Ottieni i servizi e le soluzioni necessari a raggiungere i tuoi obbiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.
+                    </div>
+                    <a class="find-partner">
+                    Trova un Partner
+                    </a>
+                </div>
+            </div>
+            <div class="section three">
+                <div class="medium-title">
+                    Esegui più operazioni con DropBox Buisness
+                </div>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <img src="img/business-feature-coordinate-it.png" alt="" class="feature-img">
+                        <div class="small-title">
+                            Passa di meno da uno strumento all'altro    
+                        </div>
+                        <div class="long-text">
+                            Porta a termine le tue attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di google, file Microsoft Office e DropBox Paper direttamente da DropBox
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <img src="img/business-feature-integrations-it.png" alt="" class="feature-img">
+                        <div class="small-title">
+                            Passa di meno da uno strumento all'altro    
+                        </div>
+                        <div class="long-text">
+                            Porta a termine le tue attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di google, file Microsoft Office e DropBox Paper direttamente da DropBox
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <img src="img/business-feature-multi-device.png" alt="" class="feature-img">
+                        <div class="small-title">
+                            Passa di meno da uno strumento all'altro    
+                        </div>
+                        <div class="long-text">
+                            Porta a termine le tue attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di google, file Microsoft Office e DropBox Paper direttamente da DropBox
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <img src="img/business-feature-security.png" alt="" class="feature-img">
+                        <div class="small-title">
+                            Passa di meno da uno strumento all'altro    
+                        </div>
+                        <div class="long-text">
+                            Porta a termine le tue attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di google, file Microsoft Office e DropBox Paper direttamente da DropBox
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <img src="img/business-feature-send-files-it.png" alt="" class="feature-img">
+                        <div class="small-title">
+                            Passa di meno da uno strumento all'altro    
+                        </div>
+                        <div class="long-text">
+                            Porta a termine le tue attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di google, file Microsoft Office e DropBox Paper direttamente da DropBox
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <img src="img/business-feature-switching-tools.png" alt="" class="feature-img">
+                        <div class="small-title">
+                            Passa di meno da uno strumento all'altro    
+                        </div>
+                        <div class="long-text">
+                            Porta a termine le tue attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di google, file Microsoft Office e DropBox Paper direttamente da DropBox
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section four">
+                <div class="medium-title">
+                    più di 500.000 team utilizzano <br>
+                    DropBox Buisness
+                </div>
+                <u class="more blue">
+                Scopri di più sui nostri clienti
+                </u>
+            </div>
         </div>
-    </div>
-
-
-    <div class="footer">
-
-    </div>
-</body>
+        <div class="footer">
+        <div class="large-footer-container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <ul>
+                        <li>
+                            <div class="small-title">DropBox</div>
+                        </li>
+                        <li>Applicazione Desktop</li>
+                        <li>Perché DropBox</li>
+                        <li>Piani</li>
+                        <li>Sicurezza</li>
+                        <li>Funzioni</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <ul>
+                        <li>
+                            <div class="small-title">Prodotti</div>
+                        </li>
+                        <li>Applicazione Desktop</li>
+                        <li>Perché DropBox</li>
+                        <li>Piani</li>
+                        <li>Sicurezza</li>
+                        <li>Funzioni</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <ul>
+                        <li>
+                            <div class="small-title">Azienda</div>
+                        </li>
+                        <li>Applicazione Desktop</li>
+                        <li>Perché DropBox</li>
+                        <li>Piani</li>
+                        <li>Sicurezza</li>
+                        <li>Funzioni</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <ul>
+                        <li>
+                            <div class="small-title">Supporto</div>
+                        </li>
+                        <li>Applicazione Desktop</li>
+                        <li>Perché DropBox</li>
+                        <li>Piani</li>
+                        <li>Sicurezza</li>
+                        <li>Funzioni</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <ul>
+                        <li>
+                            <div class="small-title">Community</div>
+                        </li>
+                        <li>Applicazione Desktop</li>
+                        <li>Perché DropBox</li>
+                        <li>Piani</li>
+                        <li>Sicurezza</li>
+                        <li>Funzioni</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="language">
+                <i class="fa-solid fa-globe"></i>Italiano<i class="fa-solid fa-chevron-up"></i>
+            </div>
+        </div>
+    </body>
 </html>
