@@ -1,363 +1,414 @@
+/* TODO e usa liste anche nelle cards*/
+
+
+
+/* General Reset and Base Styles */
 html {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-ul,
-li {
-  list-style: none;
-}
-
-hr {
-  color: grey;
-}
-
-.bold-text {
-  font-weight: 600;
-}
-
-.grey-text {
-  color: grey;
-}
-
-.blue.button,
-.transparent.button {
-  padding: 10px 15px;
-  display: inline;
-  min-height: 1rem;
-}
-
-.blue.button {
-  background-color: #0061fe;
-  color: white;
-  min-height: 1rem;
-}
-
-.section {
-  margin-bottom: 150px;
-}
-
-.long-text {
-  line-height: 1.5rem;
-  font-size: 1rem;
-  display: inline-block;
-}
-
-.big-title {
-  font-size: 6rem;
-}
-
-.medium-title {
-  font-size: 3rem;
-  font-weight: 600;
-}
-
-.small-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.large-container {
-  width: 70%;
-  margin: 0 auto;
-  padding-top: 100px;
-}
-
-.small-container {
-  width: 60%;
-  margin: 0 auto;
-  margin-top: 100px;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  height: 75px;
-  padding: 0 25px;
-  justify-content: space-around;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-.header-left > *,
-.header-right > * {
-  padding: 0 20px;
-}
-
-.header-right {
-  text-align: right;
-}
-/*! ACHTUNG*/
-
-.header-buttons{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Universal selector for margin, padding, and box-sizing */
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  /* List Styles */
+  ul,
+  li {
+    list-style: none;
+  }
+  li{
+    display: inline;
+  }
+  
+  /* Anchor Tag Styles (remove default styles) */
+  a {
+    all: unset;
+  }
+  
+  /* Horizontal Rule Styles */
+  hr {
+    color: grey;
+  }
+  
+  /* Text Styles */
+  .bold-text {
+    font-weight: 600;
+  }
+  
+  .grey-text {
+    color: grey;
+  }
+  
+  /* Button Styles */
+  .blue.button,
+  .transparent.button {
+    padding: 10px 15px;
     display: inline-block;
-}
-.header-right > * , .header-left > *{
+  }
+  
+  .blue.button {
+    background-color: #0061fe;
+    color: white;
+  }
+  
+  /* Section Styles */
+  .section {
+    margin-bottom: 150px;
+  }
+  
+  .long-text {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    display: inline-block;
+  }
+  
+  /* Title Styles */
+  .big-title {
+    font-size: 6rem;
+  }
+  
+  .medium-title {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  
+  .small-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  /* Containers */
+  .large-container {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  
+  .small-container {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 75px;
+    padding: 0 25px;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .header-left  *,
+  .header-right  * {
+    padding: 0 20px;
+  }
+  
+  .header-right {
+    text-align: right;
+  }
+  
+  .header-buttons {
+    display: inline-block;
+  }
+  
+  .header-right li, 
+  .header-left li {
     display: inline-block;
     line-height: 75px;
-}
-.header-buttons > * {
+  }
+  
+  .header-buttons > .blue {
     display: inline;
-}
-.header-right > *:hover, .header-left > *:hover{
+    background-color: #0061fe;
+    color: white;
+    padding: 10px 15px;
+  }
+  
+  .header-buttons > .transparent {
+    display: inline;
+    padding: 10px 15px;
+  }
+  
+  /* Hover Effects for Header Links */
+  .header-right li:hover,
+  .header-left li:hover {
     border-bottom: 2px solid black;
-}
-/*! ACHTUNG*/
-.header-right , .header-left{
+  }
+  
+  /* Header Layout */
+  .header-right, 
+  .header-left {
     width: 50%;
-}
-.jumbo {
-  background-color: #b4d0e6;
-  margin-bottom: 200px;
-}
-
-.jumbo-content {
-  display: flex;
-  margin-top: 50px;
-}
-
-.jumbo-small-section {
-  width: 40%;
-}
-
-.jumbo-small-section > * {
-  margin: 20px 0;
-}
-
-.jumbo-actions > * {
-  margin: 30px 0;
-}
-
-.go-down {
-  font-size: 4rem;
-}
-
-.jumbo-large-section {
-  width: 60%;
-  position: relative;
-}
-
-.jumbo-img {
-  width: 100%;
-  position: absolute
-}
-
-.section-one > * {
-  margin-top: 30px;
-}
-
-.radio {
-  height: 1rem;
-  width: 1rem;
-  display: inline-block;
-  border-radius: 50%;
-}
-
-.checked {
-  border: 4px solid #0061fe;
-}
-
-.unchecked {
-  border: 2px solid grey;
-}
-
-.radio-text {
-  display: inline-block;
-  margin-right: 15px;
-}
-
-.payment-options {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin: 40px 0;
-}
-
-.plan-cards {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.plan-card {
-  width: 30%;
-  border: 1px solid grey;
-}
-
-.plan-card-type {
-  border-bottom: 1px solid grey;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.plan-card-content > * {
-  padding: 30px 20px;
-}
-
-.plan-card-name > * {
-  margin: 10px 0;
-}
-
-.list-item {
-  position: relative;
-  margin: 10px 0;
-}
-
-.list-item > .long-text {
-  padding-left: 1.2rem;
-}
-
-.list-item > i {
-  position: absolute;
-  top: 3px;
-}
-
-.plan-card-info {
-  padding-top: 0;
-}
-
-u {
-  color: blue;
-}
-
-.buy-now {
-  margin-top: 20px;
-}
-
-.card-divider {
-  color: grey;
-  width: 20%;
-  margin: 30px 10%;
-  padding: 0;
-}
-
-.check {
-  color: #0061fe;
-  display: inline-block;
-}
-
-.large-plan-card {
-  width: 100%;
-  margin-top: 50px;
-  border: 1px solid grey;
-}
-
-.large-plan-card-content {
-  display: flex;
-  padding: 30px 20px;
-}
-
-.large-plan-card-name {
-  width: 70%;
-}
-
-.large-plan-card-name > * {
-  margin: 10px 0;
-}
-
-.large-plan-card-buy {
-  width: 30%;
-  height: 40px;
-}
-
-.section.two {
-  display: flex;
-}
-
-.large-partner {
-  width: 60%;
-}
-
-.partner {
-  width: 100%;
-}
-
-.small-partner {
-  width: 40%;
-  padding: 50px 30px;
-}
-
-.find-partner {
-  padding: 10px 15px;
-  display: inline-block;
-  border: 1px solid grey;
-  margin-top: 30px;
-}
-
-.small-partner > .long-text {
-  margin-top: 30px;
-}
-
-.feature-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.feature-card {
-  width: 30%;
-  margin-top: 50px;
-}
-
-.feature-img {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.feature-card > .long-text {
-  margin-top: 30px;
-}
-
-.more {
-  display: inline-block;
-  margin: 100px 0;
-}
-
-.footer {
-  margin-top: 50px;
-  color: white;
-  background-color: black;
-  font-size: 0.75rem;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-around;
-  padding: 50px 0;
-}
-
-.footer-section {
-  width: 20%;
-}
-
-.footer-section li {
-  margin: 15px 0;
-}
-
-.footer-divider {
-  color: white;
-  width: 10%;
-}
-
-.large-footer-container {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.language {
-  padding: 50px 0;
-}
-
-.language > * {
-  margin: 0 5px;
-}
+  }
+  
+  /* Jumbo Section */
+  .jumbo {
+    background-color: #b4d0e6;
+    margin-bottom: 200px;
+  }
+  
+  .jumbo-content {
+    display: flex;
+    margin-top: 50px;
+  }
+  
+  .jumbo-small-section {
+    width: 40%;
+  }
+  
+  .jumbo-small-section > * {
+    margin: 10px 0;
+  }
+  
+  .jumbo-actions > * {
+    margin: 30px 0;
+  }
+  
+  .go-down {
+    font-size: 4rem;
+  }
+  
+  .jumbo-large-section {
+    width: 60%;
+    position: relative;
+  }
+  
+  .jumbo-img {
+    width: 100%;
+    position: absolute;
+  }
+  
+  /* Section-One Specific Styles */
+  .section-one > * {
+    margin-top: 30px;
+  }
+  
+  /* Radio Button Styles */
+  .radio {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    border-radius: 50%;
+  }
+  
+  .checked {
+    border: 4px solid #0061fe;
+  }
+  
+  .unchecked {
+    border: 2px solid grey;
+  }
+  
+  .radio-text {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  /* Payment Options */
+  .payment-options {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 40px 0;
+  }
+  
+  /* Plan Cards */
+  .plan-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .plan-card {
+    width: 30%;
+    border: 1px solid grey;
+  }
+  
+  .plan-card-type {
+    border-bottom: 1px solid grey;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .plan-card-content > * {
+    padding: 30px 20px;
+  }
+  
+  .plan-card-name  * {
+    margin: 10px 0;
+  }
+  
+  .list-item {
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  .list-item > .long-text {
+    padding-left: 1.2rem;
+  }
+  
+  .list-item > i {
+    position: absolute;
+    top: 3px;
+  }
+  
+  .plan-card-info {
+    padding-top: 0;
+  }
+  
+  /* Miscellaneous Styles */
+  u {
+    color: blue;
+  }
+  
+  .buy-now {
+    margin-top: 20px;
+  }
+  
+  .card-divider {
+    color: grey;
+    width: 20%;
+    margin: 30px 10%;
+    padding: 0;
+  }
+  
+  .check {
+    color: #0061fe;
+    display: inline-block;
+  }
+  
+  /* Large Plan Card */
+  .large-plan-card {
+    width: 100%;
+    margin-top: 50px;
+    border: 1px solid grey;
+  }
+  
+  .large-plan-card-content {
+    display: flex;
+    padding: 30px 20px;
+  }
+  
+  .large-plan-card-name {
+    width: 70%;
+  }
+  
+  .large-plan-card-name  * {
+    margin: 10px 0;
+  }
+  
+  .large-plan-card-buy {
+    width: 30%;
+    height: 40px;
+  }
+  
+  /* Partner Section */
+  .section.two {
+    display: flex;
+  }
+  
+  .large-partner {
+    width: 60%;
+  }
+  
+  .partner {
+    width: 100%;
+  }
+  
+  .small-partner {
+    width: 40%;
+    padding: 50px 30px;
+  }
+  
+  .find-partner {
+    padding: 10px 15px;
+    display: inline-block;
+    border: 1px solid grey;
+    margin-top: 30px;
+  }
+  
+  .small-partner > .long-text {
+    margin-top: 30px;
+  }
+  
+  /* Feature Cards */
+  .feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .feature-card {
+    width: 30%;
+    margin-top: 50px;
+  }
+  
+  .feature-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .feature-card > .long-text {
+    margin-top: 30px;
+  }
+  
+  /* Footer Styles */
+  .more {
+    display: inline-block;
+    margin: 100px 0;
+  }
+  
+  .footer {
+    margin-top: 50px;
+    color: white;
+    background-color: black;
+    font-size: 0.75rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+  }
+  
+  .footer-section {
+    width: 20%;
+  }
+  
+  .footer-section li {
+    margin: 15px 0;
+  }
+  .footer-section li{
+    display: block;
+  }
+  .footer-divider {
+    color: white;
+    width: 10%;
+  }
+  
+  /* Large Footer Container */
+  .large-footer-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  /* Language Selector */
+  .language {
+    padding: 50px 0;
+  }
+  
+  .language > * {
+    margin: 0 5px;
+  }
+  
