@@ -31,12 +31,14 @@ hr {
 .blue.button,
 .transparent.button {
   padding: 10px 15px;
-  display: inline-block;
+  display: inline;
+  min-height: 1rem;
 }
 
 .blue.button {
   background-color: #0061fe;
   color: white;
+  min-height: 1rem;
 }
 
 .section {
@@ -80,12 +82,11 @@ hr {
   align-items: center;
   background-color: white;
   height: 75px;
-  padding: 25px;
-}
-
-.header-left,
-.header-right {
-  width: 50%;
+  padding: 0 25px;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .header-left > *,
@@ -96,7 +97,25 @@ hr {
 .header-right {
   text-align: right;
 }
+/*! ACHTUNG*/
 
+.header-buttons{
+    display: inline-block;
+}
+.header-right > * , .header-left > *{
+    display: inline-block;
+    line-height: 75px;
+}
+.header-buttons > * {
+    display: inline;
+}
+.header-right > *:hover, .header-left > *:hover{
+    border-bottom: 2px solid black;
+}
+/*! ACHTUNG*/
+.header-right , .header-left{
+    width: 50%;
+}
 .jumbo {
   background-color: #b4d0e6;
   margin-bottom: 200px;
@@ -111,12 +130,12 @@ hr {
   width: 40%;
 }
 
-.jumbo-small-section > a {
+.jumbo-small-section > * {
   margin: 20px 0;
 }
 
 .jumbo-actions > * {
-  margin: 10px 0;
+  margin: 30px 0;
 }
 
 .go-down {
@@ -125,11 +144,12 @@ hr {
 
 .jumbo-large-section {
   width: 60%;
+  position: relative;
 }
 
 .jumbo-img {
-  width: 54%;
-  position: absolute;
+  width: 100%;
+  position: absolute
 }
 
 .section-one > * {
