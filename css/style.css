@@ -1,293 +1,343 @@
 html {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  *,
-  *::before,
-  *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-ul, li{
-    list-style: none;
-}
-hr{
-    color: grey;
-}
-.section{
-    margin-bottom: 150px;
-}
-.bold-text{
-    font-weight: 600;
-}
-.grey-text{
-    color: grey;
-}
-.blue.button{
-    background-color: #0061fe;
-    padding: 10px 15px;
-    color: white;
-    display: inline-block;
-}
-.transparent.button{
-    padding: 10px 15px;
-    display: inline-block;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.large-container{
-    width: 70%;
-    margin: 0 auto;
-    padding-top: 100px;
-}
-.small-container{
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 100px;
-}
-.long-text{
-    line-height: 1.5rem;
-}
-.big-title{
-    font-size: 6rem;
-}
-.medium-title{
-    font-size: 3rem;
-    font-weight: 600;
-}
-.small-title{
-    font-size: 1.5rem;
-    font-weight: 600;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
+ul,
+li {
+  list-style: none;
+}
 
-.header{
-    display: flex;
-    background-color: white;
-    height: 75px;
-    padding: 25px;
-    align-items: center;
+hr {
+  color: grey;
 }
-.header-right{
-    width: 50%;
-    text-align: right;
+
+.bold-text {
+  font-weight: 600;
 }
-.header-left{
-    width: 50%;
+
+.grey-text {
+  color: grey;
 }
-.header-left > * , .header-right > *{
-    padding: 0px 20px;
+
+.blue.button,
+.transparent.button {
+  padding: 10px 15px;
+  display: inline-block;
 }
-.jumbo{
-    background-color: #b4d0e6;
-    margin-bottom: 200px;
+
+.blue.button {
+  background-color: #0061fe;
+  color: white;
 }
-.jumbo-content{
-    display: flex;
-    margin-top: 50px;
+
+.section {
+  margin-bottom: 150px;
 }
-.jumbo-small-section{
-    width: 40%;
+
+.long-text {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  display: inline-block;
 }
-.jumbo-small-section > a{
-    margin: 20px 0px;
+
+.big-title {
+  font-size: 6rem;
 }
+
+.medium-title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.small-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.large-container {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.small-container {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 75px;
+  padding: 25px;
+}
+
+.header-left,
+.header-right {
+  width: 50%;
+}
+
+.header-left > *,
+.header-right > * {
+  padding: 0 20px;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.jumbo {
+  background-color: #b4d0e6;
+  margin-bottom: 200px;
+}
+
+.jumbo-content {
+  display: flex;
+  margin-top: 50px;
+}
+
+.jumbo-small-section {
+  width: 40%;
+}
+
+.jumbo-small-section > a {
+  margin: 20px 0;
+}
+
 .jumbo-actions > * {
-    margin: 10px 0px;
+  margin: 10px 0;
 }
-.go-down{
-    font-size: 4rem;
+
+.go-down {
+  font-size: 4rem;
 }
-.jumbo-large-section{
-    width: 60%;
+
+.jumbo-large-section {
+  width: 60%;
 }
-.jumbo-img{
-    width: 54%;
-    position: absolute;
+
+.jumbo-img {
+  width: 54%;
+  position: absolute;
 }
+
 .section-one > * {
-    margin-top: 30px;
-}
-.radio{
-    height: 1rem;
-    width: 1rem;
-    border-radius: 50%;
-    display: inline-block;
-}
-.checked{
-    border: 4px solid #0061fe;
-}
-.unchecked{
-    border: 2px solid grey
-}
-.radio-text{
-    display: inline-block;
-    margin-right: 15px;
-}
-.payment-options{
-    height: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin: 40px 0;
+  margin-top: 30px;
 }
 
-.plan-cards{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.plan-card{
-    width: 30%;
-    border: 1px solid grey;
+.radio {
+  height: 1rem;
+  width: 1rem;
+  display: inline-block;
+  border-radius: 50%;
 }
 
-
-.plan-card-type{
-    border-bottom: 1px solid grey;
-    text-align: center;
-    padding: 20px 0px;
+.checked {
+  border: 4px solid #0061fe;
 }
 
-.plan-card-content > *{
-    padding: 30px 20px;
-}
-.plan-card-name > *{
-    margin: px 0px;
+.unchecked {
+  border: 2px solid grey;
 }
 
-.list-item > .long-text{
-    padding-left: 1.2rem;
+.radio-text {
+  display: inline-block;
+  margin-right: 15px;
 }
 
-.list-item{
-    position: relative;
-    margin: 10px 0px;
+.payment-options {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 40px 0;
 }
-.list-item > long-text{
-    padding-left: 1rem;
+
+.plan-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
+.plan-card {
+  width: 30%;
+  border: 1px solid grey;
+}
+
+.plan-card-type {
+  border-bottom: 1px solid grey;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.plan-card-content > * {
+  padding: 30px 20px;
+}
+
+.plan-card-name > * {
+  margin: 10px 0;
+}
+
+.list-item {
+  position: relative;
+  margin: 10px 0;
+}
+
+.list-item > .long-text {
+  padding-left: 1.2rem;
+}
+
 .list-item > i {
-    position: absolute;
-    top: 3px;
-}
-.plan-card-info{
-    padding-top: 0;
-}
-u{
-    color: blue;
-}
-.buy-now{
-    margin-top: 20px;
-}
-.card-divider{
-    color: grey;
-    width: 20%;
-    padding: 0;
-    margin: 30px 10%;
-}
-.long-text{
-    display: inline-block;
-}
- .check{
-    color: #0061fe;
-    display: inline-block;
+  position: absolute;
+  top: 3px;
 }
 
-.large-plan-card{
-    width: 100%;
-    margin-top: 50px;
-    border: 1px solid grey;
-}
-.large-plan-card-content{
-    padding: 30px 20px;
-}
-.large-plan-card-name > *{
-    margin: 10px 0px;
-}
-.large-plan-card-content{
-    display: flex;
-}
-.large-plan-card-name{
-    width: 70%;
-}
-.large-plan-card-buy{
-    width: 30%;
-    height: 40px;
+.plan-card-info {
+  padding-top: 0;
 }
 
-.section.two{
-    display: flex;
-}
-.large-partner{
-    width: 60%;
-}
-.partner{
-    width: 100%;
-}
-.small-partner{
-    width: 40%;
-    padding: 50px 30px;
-}
-.find-partner{
-    padding: 10px 15px;
-    display: inline-block;
-    border: 1px solid grey;
-    margin-top: 30px;
-}
-.small-partner > .long-text{
-    margin-top: 30px
-}   
-
-.feature-cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.feature-card{
-    width: 30%;
-    margin-top: 50px
-}
-.feature-img{
-    width: 100%;
-    margin-bottom: 20px;
+u {
+  color: blue;
 }
 
-.feature-card > .long-text{
-    margin-top: 30px;
+.buy-now {
+  margin-top: 20px;
 }
-.more{
-    display: inline-block;
-    margin: 100px 0px;
+
+.card-divider {
+  color: grey;
+  width: 20%;
+  margin: 30px 10%;
+  padding: 0;
 }
-.footer{
-    margin-top: 50px;
-    color: white;
-    background-color: black;
-    font-size: 0.75rem;
+
+.check {
+  color: #0061fe;
+  display: inline-block;
 }
-.footer-container{
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 0;
+
+.large-plan-card {
+  width: 100%;
+  margin-top: 50px;
+  border: 1px solid grey;
 }
-.footer-section{
-    width: 20%;
+
+.large-plan-card-content {
+  display: flex;
+  padding: 30px 20px;
 }
-.footer-section  li{
-    margin: 15px 0;
+
+.large-plan-card-name {
+  width: 70%;
 }
-.footer-divider{
-    color: white;
-    width: 10%;
+
+.large-plan-card-name > * {
+  margin: 10px 0;
 }
-.large-footer-container{
-    width: 70%;
-    margin: 0 auto;
+
+.large-plan-card-buy {
+  width: 30%;
+  height: 40px;
 }
-.language{
-    padding: 50px 0;
+
+.section.two {
+  display: flex;
 }
+
+.large-partner {
+  width: 60%;
+}
+
+.partner {
+  width: 100%;
+}
+
+.small-partner {
+  width: 40%;
+  padding: 50px 30px;
+}
+
+.find-partner {
+  padding: 10px 15px;
+  display: inline-block;
+  border: 1px solid grey;
+  margin-top: 30px;
+}
+
+.small-partner > .long-text {
+  margin-top: 30px;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature-card {
+  width: 30%;
+  margin-top: 50px;
+}
+
+.feature-img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.feature-card > .long-text {
+  margin-top: 30px;
+}
+
+.more {
+  display: inline-block;
+  margin: 100px 0;
+}
+
+.footer {
+  margin-top: 50px;
+  color: white;
+  background-color: black;
+  font-size: 0.75rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.footer-section {
+  width: 20%;
+}
+
+.footer-section li {
+  margin: 15px 0;
+}
+
+.footer-divider {
+  color: white;
+  width: 10%;
+}
+
+.large-footer-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.language {
+  padding: 50px 0;
+}
+
 .language > * {
-    margin: 0 5px;
+  margin: 0 5px;
 }
