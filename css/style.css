@@ -450,7 +450,9 @@ html {
   .main-company{
     padding: 30px 20px;
     background-color: #f5f5f5;
+    overflow: auto;
     height: 100%;
+    aspect-ratio: 1 / 1;
   }
   .main-company > img{
     width: 70%;
